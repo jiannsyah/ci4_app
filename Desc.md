@@ -1,0 +1,10 @@
+App => tempat menyimpan aplikasi kita
+=>models
+=>views
+=>controllers
+=>databases
+=>config
+public => tempat menyimpan aset kita
+test => untuk unit testing
+vendor => dependency dari third party
+writable => folder dimana CI akan menulis secara otomatis apa yang kita inginkan
