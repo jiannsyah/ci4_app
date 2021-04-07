@@ -31,7 +31,9 @@ $routes->setAutoRoute(true);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'Home::index');
+// $routes->get('/', 'Home::index');
+$routes->get('/', 'Pages::index');
+
 //ketika ada akses yang metode req get.
 //alamatnya adalah "/"=root
 //jika ada yang mengkases root arahkan ke controller Home yang methodenya index
@@ -46,9 +48,9 @@ $routes->get('/', 'Home::index');
 // 	echo "Hello Word";
 // });
 
-$routes->get('/coba/index', 'Coba::index');
-$routes->get('/coba/about', 'Coba::about');
-$routes->get('/coba/(:any)/(:num)', 'Coba::about/$1/$2');
+// $routes->get('/coba/index', 'Coba::index');
+// $routes->get('/coba/about', 'Coba::about');
+// $routes->get('/coba/(:any)/(:num)', 'Coba::about/$1/$2');
 //$1 apapun yang dituliskan di placeholder
 //$2 angka yang dimasukan di place holder
 //Adapun nilai place holder bermacam2
@@ -56,7 +58,7 @@ $routes->get('/coba/(:any)/(:num)', 'Coba::about/$1/$2');
 //(:num) Angka
 //(:segment) apapun kecuali slash
 //(:alphanum) alfabet&angka
-$routes->get('/users', 'Admin\users::index');
+// $routes->get('/users', 'Admin\users::index');
 
 
 
